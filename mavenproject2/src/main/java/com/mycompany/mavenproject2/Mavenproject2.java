@@ -10,6 +10,10 @@ public class Mavenproject2 {
         
         System.out.println("Hello World!");
         
+        Customer c1=new Customer();
+        c1.name="pinkey";
+        c1.size="S";
+        
         Clothing item1 = new Clothing();
         Clothing item2 = new Clothing();
         
@@ -27,5 +31,22 @@ public class Mavenproject2 {
         total= (item1.price + item2.price *2)*(1+tax);
         
         System.out.println("Total=" +total);
+        
+        int measurement= 3;
+        
+        switch(measurement){
+            
+            case 1,2,3:
+                c1.size="S";
+                break;
+            case 4,5,6:
+                c1.size="M";
+                break;
+            case 7,8,9:
+                c1.size="L";
+                break;
+                default:
+                c1.size="XL";
+        }
     }
 }
